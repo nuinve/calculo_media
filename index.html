@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora média</title>
+    <script src="js/codigo.js" defer></script>
+    <style>
+    body{
+        background-color: #e1e9ee;
+        margin: 0px;
+        height: 0px;
+    }
+    .box{
+        background-color: #c2d2d8;        
+        padding: 50px;        
+        margin: 150px; 
+        border-radius: 8px;
+        
+
+    }
+    h1{
+        text-align: center;
+        color: #64646d;
+    }
+    .container{
+        text-align: center;
+        display: block;
+        margin: auto;
+        height: 50px;  
+              
+    }    
+    input{
+        margin: 3px;
+        padding: 4px ;
+        font-size: 15px;  
+        text-align: center;      
+    }
+    .botao{
+        text-align: center;        
+        margin-top: 80px; 
+        
+    }
+    button{
+        cursor: pointer;
+        padding: 5px;
+        
+    }
+    #resposta{
+        text-align: center;        
+        background-color: #5c6266;
+        margin-top: 20px;
+        color: #ffffff;
+        font-size: large;
+        padding: 10px;       
+
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="box" >
+
+        <h1>Calcule sua média</h1>
+
+        <div class="container">
+            <input type="number" placeholder="insira a 1° nota" id="nota1">
+            <input type="number" placeholder="insira a 2° nota" id="nota2">
+            <input type="number" placeholder="insira a 3° nota" id="nota3">    
+        </div>
+
+       <div class="botao"> 
+        <button onclick="verificar_nota()">Verificar Nota</button>
+       </div>
+        
+
+        <div id="resposta"></div>
+    </div>  
+            
+   
+</body>
+</html>
